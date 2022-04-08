@@ -22,6 +22,7 @@ h1{
     background: linear-gradient(rgb(111, 121, 255), rgb(152, 108, 255));
     border-radius: 20px;
     transition: all 300ms ease-in-out;
+    
 }
 
 .learn-more:hover{
@@ -31,10 +32,13 @@ h1{
 
 /* What is ISEF? */
 .what_is_isef{
+    height: 600px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+    background-image: url("/ISEF/static/images/bg5.3 (2).png");
+    background-size: 100% 100%;
 }
 
 .isef_text{
@@ -65,6 +69,8 @@ h1{
 /* Our Event */
 .our_event{
     padding: 20px;
+    background-image: url("/ISEF/static/images/bg1.1.png");
+    background-size: 100% 100%;
 }
 
 .our_event_header{
@@ -132,7 +138,6 @@ h1{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-bottom: 2em;
 }
 
 .about_us_header{
@@ -170,7 +175,10 @@ h1{
 
 
  /* Schedule */
-
+ .isef_schedule_div{
+    background-image: url("/ISEF/static/images/bg5.2.png");
+    background-size: 100% 100%;
+ }
  .schedule_header{
      text-align: center;
  }
@@ -193,9 +201,6 @@ h1{
      flex-direction: row-reverse;
  }
 
- .section_inner{
-    width: 60%;
- }
 
  .section_inner div{
     width: 100%;
@@ -216,19 +221,13 @@ h1{
      box-shadow: 0 5px 15px 3px rgba(132, 123, 255, 0.2);
  }
 
- .section_image{
-     width: 40%;
+ .section_image, .section_image_2{
      display:flex;
      justify-content: center;
      align-items: center;
      animation: float2 5s infinite ease-in-out;
      transition: all 500ms ease-in-out;
      
- }
-
- .section_image_2{
-    animation: float2 5s infinite ease-in-out;
-    transition: all 500ms ease-in-out;
  }
 
  .section_image img{
@@ -241,8 +240,67 @@ h1{
     height: 650px;
  }
 
+
+ /* About */
+ .about_xd{
+    background-image: url("/ISEF/static/images/bg2.3\ \(1\).png");
+    background-size: 100% 850px;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+ }
+
+ .about_inner{
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+
+     background: rgba( 255, 255, 255, 0.25 );
+     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+     backdrop-filter: blur( 4px );
+     -webkit-backdrop-filter: blur( 4px );
+     border-radius: 10px;
+     border: 1px solid rgba( 255, 255, 255, 0.18 );
+ }
+
+ .circle, .circle2{
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     background: rgba( 255, 255, 255, 0.25 );
+     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+     backdrop-filter: blur( 4px );
+     -webkit-backdrop-filter: blur( 4px );
+     border-radius: 100%;
+     border: 1px solid rgba( 255, 255, 255, 0.18 );
+     animation: float2 5s infinite ease-in-out;
+     transition: all 500ms ease-in-out;
+ }
+
+ .circle{
+     z-index: 2;
+     left: 0%;
+     top: 80%;
+ }
+
+ .circle2{
+    z-index: 2;
+     right: 5%;
+     top: -20%;
+ }
+
+ 
  @media screen and (max-width: 1050px) {
     .block{
+        display: none;
+    }
+    .section_1, .section_2{
+        display: block;
+        width: 900px;
+        
+    }
+    .section_image img, .section_image_2{
         display: none;
     }
  }
@@ -250,6 +308,7 @@ h1{
     .what_is_isef, .our_event_flex, .about_us{
         flex-wrap: wrap;
         text-align: center;
+        flex-direction: column-reverse;
     }
 
     .section_2{
@@ -263,3 +322,4 @@ h1{
       --row-height: 200px;
     }
   }
+
