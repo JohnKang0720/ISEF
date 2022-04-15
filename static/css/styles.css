@@ -32,13 +32,13 @@ h1{
 
 /* What is ISEF? */
 .what_is_isef{
-    height: 600px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px;
     background-image: url("/ISEF/static/images/bg5.3 (2).png");
-    background-size: 100% 100%;
+    background-size: 100% 480px;
 }
 
 .isef_text{
@@ -300,18 +300,28 @@ h1{
     }
     .section_1, .section_2{
         display: block;
-        width: 900px;
+        width: 100%;
         
     }
     .section_image img, .section_image_2{
         display: none;
     }
+
+    .what_is_isef{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
  }
- @media screen and (max-width: 760px) {
-    .what_is_isef, .our_event_flex, .about_us{
+ @media screen and (max-width: 850px) {
+     .our_event_flex{
         flex-wrap: wrap;
         text-align: center;
         flex-direction: column-reverse;
+    }
+
+    .about_us{
+        flex-wrap: wrap;
+        text-align: center;
     }
 
     .section_2{
