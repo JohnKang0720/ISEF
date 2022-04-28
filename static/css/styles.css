@@ -38,7 +38,7 @@ h1{
     flex-wrap: wrap;
     padding: 20px;
     background-image: url("/ISEF/static/images/bg5.3 (2).png");
-    background-size: 100% 480px;
+    background-size: 100% 100%;
 }
 
 .isef_text{
@@ -68,14 +68,16 @@ h1{
 
 /* Our Event */
 .our_event{
-    padding: 20px;
+    padding: 15px;
     background-image: url("/ISEF/static/images/bg1.1.png");
-    background-size: 100% 100%;
+    background-size: 100% 800px;
 }
 
 .our_event_header{
-    text-align: center;
+    text-align: left;
+    padding: 15px;
 }
+
 
 .our_event_flex{
     width: 100%;
@@ -89,7 +91,6 @@ h1{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 10px;
 }
 
 .events img{
@@ -103,6 +104,10 @@ h1{
 
 .events img:hover{
     box-shadow: 0 5px 15px 3px rgba(136, 93, 255, 0.4);
+}
+
+.events p{
+    width: 80%;
 }
 
 @keyframes float {
@@ -142,6 +147,7 @@ h1{
 
 .about_us_header{
     text-align: center;
+    width: 100%;
 }
 
 .image-grid {
@@ -175,12 +181,20 @@ h1{
 
 
  /* Schedule */
+
  .isef_schedule_div{
+    background-image: url("/ISEF/static/images/bg2.3\ \(1\).png");
+    background-size: 100% 620px;
+ }
+
+ .isef_schedule_div2{
     background-image: url("/ISEF/static/images/bg5.2.png");
     background-size: 100% 100%;
  }
  .schedule_header{
      text-align: center;
+     padding: 0;
+     margin: 0;
  }
 
  .schedule{
